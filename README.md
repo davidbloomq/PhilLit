@@ -12,6 +12,8 @@
 
 PhilLit generates analytical literature reviews with verified bibliographies for philosophy research. Give it a topic description, and it searches academic databases, collects and checks references, and writes a structured review — typically in half an hour.
 
+> **About this fork** — Maintained by [David Bloom](https://github.com/davidbloomq), Yale undergrad, making small edits as I use the tool. The upstream repo is [AI-4-Phi/PhilLit](https://github.com/AI-4-Phi/PhilLit). Changes from the original are marked with *[Fork edit]* below.
+
 PhilLit is free and open-source. You only pay Anthropic for using Claude. This is a research project evaluating AI-generated literature reviews for philosophy ([see below](#participate-in-research)).
 
 ## Example Reviews
@@ -36,7 +38,7 @@ PhilLit itself is free. Running it requires [Claude Code](https://docs.anthropic
 **What you need:**
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) — the AI coding tool that runs PhilLit
-- A [Brave Search API key](https://brave.com/search/api/) (free tier available)
+- A [Brave Search API key](https://brave.com/search/api/) (paid; $5/mo credit, ~1,000 queries) *[Fork edit: Brave removed their free tier in Feb 2026]*
 - Optionally, a [Semantic Scholar API key](https://www.semanticscholar.org/product/api#api-key) (free) for better search results
 
 Setup takes about 10 minutes. See [GETTING_STARTED.md](GETTING_STARTED.md) for step-by-step instructions.

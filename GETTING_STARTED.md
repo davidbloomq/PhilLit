@@ -54,7 +54,7 @@ The Python environment is **automatically configured** when you start Claude Cod
 The literature search scripts require API keys. Create a `.env` file in the project root with the variables listed below. Variables in `.env` take priority over your shell environment and are automatically loaded when Claude Code starts.
 
 **Required:**
-- **BRAVE_API_KEY**: Get one at https://brave.com/search/api/
+- **BRAVE_API_KEY**: Get one at https://brave.com/search/api/ (paid; Brave removed their free tier in Feb 2026 — new accounts get $5/mo credit, ~1,000 queries) *[Fork edit]*
 - **CROSSREF_MAILTO**: Your email address (no signup required; used for CrossRef's polite pool)
 
 **Recommended:**
