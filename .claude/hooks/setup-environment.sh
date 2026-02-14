@@ -47,9 +47,6 @@ if ! command -v uv &> /dev/null; then
   exit 2
 fi
 
-# Load project .env file (overrides existing environment)
-load_dotenv ".env"
-
 # Detect stale venv (created at a different path) and recreate if necessary
 EXPECTED_VENV_PATH="$(pwd)/.venv"
 if [ -f ".venv/bin/activate" ]; then
@@ -70,6 +67,10 @@ fi
 
 # Capture environment state before activation
 ENV_BEFORE=$(export -p | sort)
+
+# Load project .env file (overrides existing environment)
+# Must be loaded AFTER capturing ENV_BEFORE so variables appear in the diff
+load_dotenv ".env"
 
 # Sync environment (creates .venv and uv.lock if needed)
 if ! uv sync --quiet 2>/dev/null; then
