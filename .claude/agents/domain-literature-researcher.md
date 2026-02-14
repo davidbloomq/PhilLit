@@ -98,20 +98,16 @@ You produce **valid UTF-8 BibTeX files** (`.bib`) importable into reference mana
 
 ## Status Updates
 
-Output brief status after each search phase. Users should see progress every 2-3 minutes.
+Multiple domain researchers run in parallel, so **minimize terminal output** to avoid interleaved garbled text. Only output at start and completion — no per-stage updates.
 
 **Format:**
-- `→ Phase N: [source]...` at start of each search phase
-- `✓ [source]: [N] papers` at phase completion
-- `✓ Domain complete: [filename] ([N] papers)` at end
+- `→ [Domain Name]: Starting search...` at start
+- `✓ [Domain Name]: [filename] ([N] papers)` at completion
 
 **Example:**
 ```
-→ Stage 1: Searching SEP...
-✓ SEP: 3 entries
-→ Stage 3: Searching Semantic Scholar...
-✓ S2: 28 papers
-✓ Domain complete: literature-domain-1.bib (18 papers)
+→ Compatibilism: Starting search...
+✓ Compatibilism: literature-domain-1.bib (18 papers)
 ```
 
 ---

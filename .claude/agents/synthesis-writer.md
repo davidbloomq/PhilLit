@@ -39,10 +39,10 @@ The orchestrator provides:
 
 ## Status Updates
 
-Output brief status during writing:
-- `→ Writing [section title]...` at start
-- `→ Progress: [N]/[target] words` at ~50% milestone
-- `✓ Section complete: [N] words, [M] citations → [filename]` at end
+Multiple synthesis writers run in parallel, so **minimize terminal output** to avoid interleaved garbled text. Only output at start and completion — no mid-progress updates.
+
+- `→ Section [N]: Writing [section title]...` at start
+- `✓ Section [N]: [N] words, [M] citations → [filename]` at completion
 
 ---
 
